@@ -1,0 +1,8 @@
+1. The plugin should be able to create a pop up using a shortcode and a ID.
+2. Inside the pop up, it shows all the options for the user to select and calculates
+the value adding or substracting from the selected options. 
+3. When clicked on calculate it should not refresh the page.
+4. It must be able to send the quote trough email.
+5. The options for the form should be selected from the backend in wordpress and not hardcoded.
+6. The user must add some contact data, this information should be stored in the database. Inside a new table
+7. The plugin must have an admin pannel that shows options to style the plugin and important settings.
