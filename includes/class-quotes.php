@@ -156,8 +156,11 @@ class Quotes {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-
+		
 	}
+
+// Define shortcodes for wordpress
+
 
 	/**
 	 * Register all of the hooks related to the public-facing functionality
@@ -172,7 +175,11 @@ class Quotes {
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
+		$this->loader->add_action( 'admin_post_handle_form_submission', $plugin_public, 'form_handler' );
+		$this->loader->add_action( 'admin_post_nopriv_handle_form_submission', $plugin_public, 'form_handler' );
+		// REgister the shortcode
 
+		add_shortcode('quote_form',array($plugin_public, 'quote_form_shortcode'));
 	}
 
 	/**

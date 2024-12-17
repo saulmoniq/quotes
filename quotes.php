@@ -80,3 +80,7 @@ function run_quotes() {
 
 }
 run_quotes();
+
+
+
+?>

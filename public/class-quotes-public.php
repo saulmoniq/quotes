@@ -100,4 +100,14 @@ class Quotes_Public {
 
 	}
 
+	public function quote_form_shortcode(){
+		ob_start();
+		include plugin_dir_path(__FILE__).'partials/quotes-public-display.php';
+		return ob_get_clean();
+	}
+
+	function form_handler(){
+            wp_redirect('http://google.com');
+	}
+
 }

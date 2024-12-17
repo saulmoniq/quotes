@@ -101,3 +101,5 @@ class Quotes_Admin {
 	}
 
 }
+
+
